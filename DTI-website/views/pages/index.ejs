@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/styles/snes.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      <h1 class="title">ARCADENCE</h1>
+    </div>
+    <div class="item">
+      <h2 class="title">Crowd Levels at Fitness Stations</h1>
+    </div>
+    <% crowdLevels.forEach(station => { %>
+    <div class="item">
+      <h3><%= station.name %>:</h3> 
+      <% for(var i=0; i < station.users; i++) {%>
+      <img src="img/users.png" width="32px" height="32px">
+      <% } %>
+      <% for(var i=0; i < (4 - station.users); i++) {%>
+        <img src="img/users_outline_white.png" width="28px" height="28px">
+        <% } %>
+    </div>
+    <% }) %>
+    <div class="item">
+      <a href="/choose-workout" class="snes-button has-ocean-color">Choose Workout</a>
+  </div>  
+  </div>
+</body>
+</html>

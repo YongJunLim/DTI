@@ -1,0 +1,39 @@
+{
+    "stations": [
+        {
+            "id": 1,
+            "name": "Pullups",
+            "users": 2
+        },
+        {
+            "id": 2,
+            "name": "Situps",
+            "users": 3
+        },
+        {
+            "id": 3,
+            "name": "Lunges",
+            "users": 4
+        },
+        {
+            "id": 4,
+            "name": "Pushups",
+            "users": 4
+        },
+        {
+            "id": 5,
+            "name": "Leg Raises",
+            "users": 0
+        },
+        {
+            "id": 6,
+            "name": "Dips",
+            "users": 3
+        },
+        {
+            "id": 7,
+            "name": "Log Raises",
+            "users": 1
+        }
+    ]
+}

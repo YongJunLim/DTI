@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/styles/snes.min.css">
+  <link rel="stylesheet" href="/styles/form.css">
+  <script src="/js/form.js" type="text/javascript"></script>
+</head>
+ 
+<body>
+    <div class="container">
+        <form action="/submit-workout" method="POST">
+            <div class="item">
+                <h1 class="title">ARCADENCE</h1>
+            </div>
+            <div class="item">
+                <div class="snes-form-group">
+                    <label>RFID ID</label>
+                    <div class="snes-input">
+                        <input name="rfid_uid" type="text" value="" placeholder="Scan RFID tag" />
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="snes-form-group">
+                    <label>SELECT WORKOUT ROUTINE</label>
+                    <div class="snes-radio snes-radio--vertical">
+                        <label class="snes-radio__item has-galaxy-icon">
+                            <input type="radio" name="workout" value="upper" checked />
+                            <span class="snes-radio__item__content">Upper Body</span>
+                        </label>
+                        <label class="snes-radio__item has-galaxy-icon">
+                            <input type="radio" name="workout" value="lower" />
+                            <span class="snes-radio__item__content">Lower Body</span>
+                        </label>
+                        <label class="snes-radio__item has-galaxy-icon">
+                            <input type="radio" name="workout" value="full" />
+                            <span class="snes-radio__item__content">Full Body</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="snes-form-group">
+                    <label>SELECT AGE</label>
+                    <p id="age">No age given.</p>
+                    <input
+                        value=""
+                        type="range"
+                        class="snes-range has-soft-green-thumb has-galaxy-bg"
+                        min="12"
+                        max="120"
+                        name="age"
+                        oninput="showAgeVal(this.value)"
+                        onchange="showAgeVal(this.value)"
+                    />
+                </div>
+                <div class="snes-form-group">
+                    <label>SELECT HEIGHT</label>
+                    <p id="height">No height given.</p>
+                    <input
+                        value=""
+                        type="range"
+                        class="snes-range has-soft-green-thumb has-galaxy-bg"
+                        min="1.2"
+                        max="2.2"
+                        step="0.01"
+                        name="height"
+                        oninput="showHeightVal(this.value)"
+                        onchange="showHeightVal(this.value)"
+                    />
+                </div>
+            </div>
+            <div class="item">
+                <button class="snes-button has-ocean-color" type="submit">Start Workout</button>
+            </div>  
+        </form>
+    </div>
+</body>
+ 
+</html>
