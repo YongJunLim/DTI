@@ -22,8 +22,8 @@ This repository contains both a proof of concept for a gamified log raise fitnes
 ### Videos
 ![](media/final_game_demo.mov)
 ![](media/fitness_corner_command_centre.mov)
-![](media/PROJECT ARCADENCE.mp4)
+![](media/PROJECT%20ARCADENCE.mp4)
 
 ## Credits
-2024 Cohort 2 Group 1 - 12 Cents (including Akash, John, Magnus, Sanshray, Stanley and I)
-Sanshray: Game artstyle
+- 2024 Cohort 2 Group 1 - 12 Cents (including Akash, John, Magnus, Sanshray, Stanley and I)
+- Sanshray: Game artstyle
